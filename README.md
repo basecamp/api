@@ -1,5 +1,5 @@
-Authentication
-==============
+37signals API Authentication
+============================
 
 > Speak, friend, and enter.
 
@@ -13,11 +13,14 @@ To hit the ground running with the all new Basecamp's API, just use HTTP Basic a
 ```shell
 curl -u username:password -H 'User-Agent: MyApp (yourname@example.com)' https://basecamp.com/999999999/api/v1/projects.json
 ```
-_Never ask a user of your application for their username, password!_
+_Never ask a user of your application for their username or password!_
 
 You're free to use your own username & password to access your own account and
 to get started with the API. OAuth 2 is a simple protocol, but it's yet another
 speed bump to getting an integration off the ground.
+
+Your HTTP client software includes built-in support for HTTP Basic authentication.
+Just provide your username and password.
 
 API Key
 -------
@@ -50,7 +53,6 @@ OAuth 2 from scratch
 If you're going bare-metal and developing your own OAuth 2 client, you have a bit more work to do.
 
 **TL;DR** request access, receive a verification code, trade it for an access token.
-
 
 The typical flow for a web app:
 
