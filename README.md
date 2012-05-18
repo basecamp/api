@@ -1,28 +1,34 @@
-37signals API Authentication
-============================
+Authentication
+==============
 
 > Speak, friend, and enter.
 
-All 37signals' products API requests are authenticated by passing along an OAuth 2 token or your own username & password.
+All 37signals' products API requests can be authenticated by passing along an OAuth 2 token. API keys are supported as well for some apps.
 
-Username & Password
--------------------
+Basic Auth (new Basecamp only)
+------------------------------
 
-To hit the ground running, just use HTTP Basic authentication with your own login info:
+To hit the ground running with the all new Basecamp's API, just use HTTP Basic authentication with your own login info:
 
 ```shell
 curl -u username:password -H 'User-Agent: MyApp (yourname@example.com)' https://basecamp.com/999999999/api/v1/projects.json
 ```
-
-_Never ask a user for their login info!_
+_Never ask a user of your application for their username, password!_
 
 You're free to use your own username & password to access your own account and
 to get started with the API. OAuth 2 is a simple protocol, but it's yet another
 speed bump to getting an integration off the ground.
 
-Your HTTP client software includes built-in support for HTTP Basic authentication.
-Just provide your username and password.
+API Key
+-------
 
+Basecamp Classic, Highrise, Campfire, and Backpack allow usage of an API token to authenticate:
+
+```shell
+curl -u 605b32dd:X https://sample.campfirenow.com/room/1.xml
+```
+
+Remember that anyone who has your authentication token can see and change everything you have access to. So you want to guard that as well as you guard your username and password. If you come to fear that it has been compromised, just change your regular password and the authentication token will change too.
 
 OAuth 2
 -------
@@ -52,7 +58,7 @@ The typical flow for a web app:
 
         https://launchpad.37signals.com/authorization/new?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri
 
-2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like.](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
+2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
 
 3. We redirect the user back to your app with a time-limited verification code.
 
