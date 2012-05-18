@@ -52,7 +52,7 @@ The typical flow for a web app:
 
         https://launchpad.37signals.com/authorization/new?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri
 
-2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Example of what this screen looks like](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
+2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like.](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
 
 3. We redirect the user back to your app with a time-limited verification code.
 
@@ -73,4 +73,3 @@ Implementation notes:
 * We support the web_server and user_agent flows, not the client_credentials or device flows.
 * We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
 * We return more verbose errors than what's given in the spec to help with client development. We'll move these to a separate parameter later.
-
