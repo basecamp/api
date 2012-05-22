@@ -10,7 +10,7 @@ Where do I start?
 Want to get started with API integration? Here's a quick check list:
 
 1. [Register your app](http://integrate.37signals.com/apps/new) or [update your already registered app](http://integrate.37signals.com/) to access more products.
-2. Review the [brand guidelines](#brand_guidelines) for rules on naming and marketing your app
+2. Review the [brand guidelines](#brand-guidelines) for rules on naming and marketing your app
 3. Read up on how to [authenticate your app](#authentication) with our products.
 4. Peruse the [API docs](#products) for the product you need to work with
 5. Join the [API mailing list](http://groups.google.com/group/37signals-api) to talk to others using the APIs and give us feedback!
