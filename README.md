@@ -1,83 +1,63 @@
-37signals API Authentication
-============================
+37signals APIs
+==============
 
-> Speak, friend, and enter.
-
-All 37signals' products API requests can be authenticated by passing along an OAuth 2 token. API keys are supported as well for some apps.
-
-Basic Auth (new Basecamp only)
-------------------------------
-
-To hit the ground running with the all new Basecamp's API, just use HTTP Basic authentication with your own login info:
-
-```shell
-curl -u username:password -H 'User-Agent: MyApp (yourname@example.com)' https://basecamp.com/999999999/api/v1/projects.json
-```
-_Never ask a user of your application for their username or password!_
-
-You're free to use your own username & password to access your own account and
-to get started with the API. OAuth 2 is a simple protocol, but it's yet another
-speed bump to getting an integration off the ground.
-
-Your HTTP client software includes built-in support for HTTP Basic authentication.
-Just provide your username and password.
-
-API Key
--------
-
-Basecamp Classic, Highrise, Campfire, and Backpack allow usage of an API token to authenticate:
-
-```shell
-curl -u 605b32dd:X https://sample.campfirenow.com/room/1.xml
-```
-
-Remember that anyone who has your authentication token can see and change everything you have access to. So you want to guard that as well as you guard your username and password. If you come to fear that it has been compromised, just change your regular password and the authentication token will change too.
-
-OAuth 2
--------
-
-For a full app integration, you wouldn't want to get into the business of asking
-customers for their passwords -- or storing them! -- so we offer a simple way to
-ask a user for access to his account. You get an API access token back without
-ever having to see his password or ask him to copy/paste an API key.
-
-1. [Grab an OAuth 2 library](http://oauth.net/code/).
-2. Register your app at [integrate.37signals.com](https://integrate.37signals.com). You'll be assigned a `client_id` and `client_secret`. You'll need to provide a `redirect_uri`: a URL where we can send a verification code. Just enter a dummy URL like `http://myapp.com/oauth` if you're not ready for this yet.
-3. Configure your OAuth 2 library with your `client_id`, `client_secret`, and `redirect_uri`. Tell it to use `https://launchpad.37signals.com/authorization/new` to request authorization and `https://launchpad.37signals.com/authorization/token` to get access tokens.
-4. Try making an authorized request to `https://launchpad.37signals.com/authorization.json` to dig in and test it out!
+Looking to integrate with a 37signals product? We've got everything you need here. From sample code to detailed API documentation, you'll be up and running in no time.
 
 
-OAuth 2 from scratch
---------------------
+Where do I start?
+-----------------
 
-If you're going bare-metal and developing your own OAuth 2 client, you have a bit more work to do.
+Want to get started with API integration? Here's a quick check list:
 
-**TL;DR** request access, receive a verification code, trade it for an access token.
+1. [Register your app](http://integrate.37signals.com/apps/new) or [update your already registered app](http://integrate.37signals.com/) to access more products.
+2. Review the [brand guidelines](#brand_guidelines) for rules on naming and marketing your app
+3. Read up on how to [authenticate your app](#authentication) with our products.
+4. Peruse the [API docs](#products) for the product you need to work with
+5. Join the [API mailing list](http://groups.google.com/group/37signals-api) to talk to others using the APIs and give us feedback!
 
-The typical flow for a web app:
 
-1. Your app requests authorization by redirecting your user to Launchpad:
+Products
+--------
 
-        https://launchpad.37signals.com/authorization/new?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri
+Need to look up the API documentation for a product? There's a repo for each:
 
-2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
+* [Basecamp](https://github.com/37signals/bcx-api)
+* [Basecamp Classic](https://github.com/37signals/basecamp-classic-api)
+* [Highrise](https://github.com/37signals/highrise-api)
+* [Campfire](https://github.com/37signals/campfire-api)
+* [Backpack](https://github.com/37signals/backpack-api)
 
-3. We redirect the user back to your app with a time-limited verification code.
 
-4. Your app makes a backchannel request to trade the verification code for an access token. We authenticate your app and issue an access token:
+Authentication
+--------------
 
-        POST https://launchpad.37signals.com/authorization/token?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri&client_secret=your-client-secret&code=verification-code
+Logging your users into our products is supported through OAuth 2. Several apps support login via API tokens and HTTP Basic Authentication as well.
 
-5. Your app uses the token to authorize API requests to any of the 37signals ID's accounts. Set the Authorization request header:
+We have a [detailed guide](https://github.com/37signals/37signals-apis/blob/master/sections/authentication.md) for authenticating your users with our apps.
 
-        Authorization: Bearer <tokenhere>
 
-6. To get info about the 37signals ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`).
+Brand Guidelines
+----------------
 
-Implementation notes:
+Have questions on how to name and publicize your app? Our [brand guidelines](https://github.com/37signals/37signals-apis/blob/master/sections/brand_guidelines.md) have some basic answers for you. If you have a more detailed question, just [open up a support ticket](http://help.37signals.com/tickets/new) and we'll sort it out!
 
-* Start by reading the [draft spec](http://tools.ietf.org/html/draft-ietf-oauth-v2)
-* We implement draft 5 and will update our implementation as the final spec converges. Be prepared for changes along the way.
-* We support the web_server and user_agent flows, not the client_credentials or device flows.
-* We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
-* We return more verbose errors than what's given in the spec to help with client development. We'll move these to a separate parameter later.
+
+Official logos
+--------------
+
+This repo has official high quality EPS logos for each product, which we encourage use of to promote your app!
+
+* [37signals official logo](https://github.com/37signals/37signals-apis/tree/master/logos/37signals.eps)
+* [Basecamp official logo](https://github.com/37signals/37signals-apis/tree/master/logos/basecamp.eps)
+* [Highrise official logo](https://github.com/37signals/37signals-apis/tree/master/logos/highrise.eps)
+* [Campfire official logo](https://github.com/37signals/37signals-apis/tree/master/logos/campfire.eps)
+* [Backpack official logo](https://github.com/37signals/37signals-apis/tree/master/logos/backpack.eps)
+
+
+
+Help us make it better
+----------------------
+
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use GitHub issues. Fork these docs and send a pull request with improvements.
+
+To talk with us and other developers about the API, subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
