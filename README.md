@@ -26,6 +26,7 @@ Need to look up the API documentation for a product? There's a repo for each:
 * [Highrise API](https://github.com/37signals/highrise-api)
 * [Campfire API](https://github.com/37signals/campfire-api)
 * [Backpack API](https://github.com/37signals/backpack-api)
+* [System Status API](http://status.37signals.com/api)
 
 
 Authentication
