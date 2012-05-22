@@ -17,7 +17,7 @@ Naming your app
 * Use words that are related to our apps — like “Base” or “Camp”.
 * Use language to suggest that your app is an official 37signals one.
 
-![Don't name your app this](https://raw.github.com/37signals/37signals-apis/master/sections/img-baseapp.png)
+![Don't name your app this](https://raw.github.com/37signals/api/master/sections/img-baseapp.png)
 
 
 Creating your app’s logo
@@ -33,7 +33,7 @@ Creating your app’s logo
 * Use visual elements from the Basecamp, Highrise, Backpack, or Campfire logos.
 * Use the snowglobe shape.
 
-![Don't paste Windows XP icons inside of our snowglobes, please.](https://raw.github.com/37signals/37signals-apis/master/sections/img-snowglobe.png)
+![Don't paste Windows XP icons inside of our snowglobes, please.](https://raw.github.com/37signals/api/master/sections/img-snowglobe.png)
 
 
 Marketing your app
@@ -42,7 +42,7 @@ Marketing your app
 **Do**
 
 * Say that your app integrates or works with Basecamp, Highrise, Backpack, or Campfire.
-* Download official [37signals logos](https://github.com/37signals/37signals-apis/tree/logos) for use on your site.
+* Download official [37signals logos](https://github.com/37signals/api/tree/logos) for use on your site.
 * Link to our product websites for your customers to learn more.
 
 **Don't**
@@ -50,4 +50,4 @@ Marketing your app
 * Use language to suggest that your app is an official 37signals one.
 * Manipulate or recreate our product logos.
 
-![Make your app unique!](https://raw.github.com/37signals/37signals-apis/master/sections/img-bcbastard.png)
+![Make your app unique!](https://raw.github.com/37signals/api/master/sections/img-bcbastard.png)

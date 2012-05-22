@@ -33,13 +33,13 @@ Authentication
 
 Logging your users into our products is supported through OAuth 2. Several apps support login via API tokens and HTTP Basic Authentication as well.
 
-We have a [detailed guide](https://github.com/37signals/37signals-apis/blob/master/sections/authentication.md) for authenticating your users with our apps.
+We have a [detailed guide](https://github.com/37signals/api/blob/master/sections/authentication.md) for authenticating your users with our apps.
 
 
 Brand Guidelines
 ----------------
 
-Have questions on how to name and publicize your app? Our [brand guidelines](https://github.com/37signals/37signals-apis/blob/master/sections/brand_guidelines.md) have some basic answers for you. If you have a more detailed question, just [open up a support ticket](http://help.37signals.com/tickets/new) and we'll sort it out!
+Have questions on how to name and publicize your app? Our [brand guidelines](https://github.com/37signals/api/blob/master/sections/brand_guidelines.md) have some basic answers for you. If you have a more detailed question, just [open up a support ticket](http://help.37signals.com/tickets/new) and we'll sort it out!
 
 
 Official logos
@@ -47,11 +47,11 @@ Official logos
 
 This repo has official high quality EPS logos for each product, which we encourage use of to promote your app!
 
-* [37signals official logo](https://github.com/37signals/37signals-apis/tree/master/logos/37signals.eps)
-* [Basecamp official logo](https://github.com/37signals/37signals-apis/tree/master/logos/basecamp.eps)
-* [Highrise official logo](https://github.com/37signals/37signals-apis/tree/master/logos/highrise.eps)
-* [Campfire official logo](https://github.com/37signals/37signals-apis/tree/master/logos/campfire.eps)
-* [Backpack official logo](https://github.com/37signals/37signals-apis/tree/master/logos/backpack.eps)
+* [37signals official logo](https://github.com/37signals/api/tree/master/logos/37signals.eps)
+* [Basecamp official logo](https://github.com/37signals/api/tree/master/logos/basecamp.eps)
+* [Highrise official logo](https://github.com/37signals/api/tree/master/logos/highrise.eps)
+* [Campfire official logo](https://github.com/37signals/api/tree/master/logos/campfire.eps)
+* [Backpack official logo](https://github.com/37signals/api/tree/master/logos/backpack.eps)
 
 
 
