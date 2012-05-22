@@ -16,16 +16,16 @@ Want to get started with API integration? Here's a quick check list:
 5. Join the [API mailing list](http://groups.google.com/group/37signals-api) to talk to others using the APIs and give us feedback!
 
 
-Products
---------
+API Documentation
+-----------------
 
 Need to look up the API documentation for a product? There's a repo for each:
 
-* [Basecamp](https://github.com/37signals/bcx-api)
-* [Basecamp Classic](https://github.com/37signals/basecamp-classic-api)
-* [Highrise](https://github.com/37signals/highrise-api)
-* [Campfire](https://github.com/37signals/campfire-api)
-* [Backpack](https://github.com/37signals/backpack-api)
+* [Basecamp API](https://github.com/37signals/bcx-api)
+* [Basecamp Classic API](https://github.com/37signals/basecamp-classic-api)
+* [Highrise API](https://github.com/37signals/highrise-api)
+* [Campfire API](https://github.com/37signals/campfire-api)
+* [Backpack API](https://github.com/37signals/backpack-api)
 
 
 Authentication
@@ -45,14 +45,13 @@ Have questions on how to name and publicize your app? Our [brand guidelines](htt
 Official logos
 --------------
 
-This repo has official high quality EPS logos for each product, which we encourage use of to promote your app!
+This repo contains official high quality EPS logos for each product, which we encourage use of to promote your app!
 
-* [37signals official logo](https://github.com/37signals/api/tree/master/logos/37signals.eps)
-* [Basecamp official logo](https://github.com/37signals/api/tree/master/logos/basecamp.eps)
-* [Highrise official logo](https://github.com/37signals/api/tree/master/logos/highrise.eps)
-* [Campfire official logo](https://github.com/37signals/api/tree/master/logos/campfire.eps)
-* [Backpack official logo](https://github.com/37signals/api/tree/master/logos/backpack.eps)
-
+* [37signals official logo](https://github.com/37signals/api/tree/master/logos/37signals.eps?raw=true)
+* [Basecamp official logo](https://github.com/37signals/api/tree/master/logos/basecamp.eps?raw=true)
+* [Highrise official logo](https://github.com/37signals/api/tree/master/logos/highrise.eps?raw=true)
+* [Campfire official logo](https://github.com/37signals/api/tree/master/logos/campfire.eps?raw=true)
+* [Backpack official logo](https://github.com/37signals/api/tree/master/logos/backpack.eps?raw=true)
 
 
 Help us make it better
