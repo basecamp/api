@@ -1,7 +1,7 @@
 Brand Guidelines
 ================
 
-Thank you for making an app that works with ours. This page to help you brand your app so people don’t confuse your product with one of ours.
+Thanks making an app that works with ours! This guide will help you brand your app so people don’t confuse your product with one of ours.
 
 
 Naming your app
