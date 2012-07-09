@@ -72,7 +72,7 @@ The typical flow for a web app:
 
         Authorization: Bearer <tokenhere>
 
-6. To get info about the 37signals ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`).
+6. To get info about the 37signals ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`). (See 
 
 Implementation notes:
 
@@ -89,7 +89,7 @@ Get authorization
 * `GET https://launchpad.37signals.com/authorization.json`
 * `GET https://launchpad.37signals.com/authorization.xml`
 
-This endpoint returns the following:
+This endpoint requires the `Authorization` header and returns the following:
 
 * A `expires_at` timestamp for when this token will expire, and you'll need to fetch a new one to authenticate requests
 * An `identity`, which is **NOT** used for determining who this user is within a specific application. The `id` field should **NOT** be used for submitting data within any application's API. This field can be used to get a user's name and email address quickly, and the `id` field could be used for caching on a cross-application basis if needed.
@@ -127,3 +127,17 @@ This endpoint should be first request made after you've obtained a user's author
   ]
 }
 ```
+
+
+Who am I?
+---------
+
+So you've picked the product, have the `href` to request to, and now what? Depending on what your API integration needs, you may need to know who the current user is within that product. For example, if you were working with the [Basecamp API](https://github.com/37signals/bcx-api) this is how you would obtain the `id` field to [submit a todo](https://github.com/37signals/bcx-api/blob/master/sections/todos.md#create-todo) assigned to the current user.
+
+Here's links to the endpoints in our products that you'll need to hit:
+
+* [Basecamp: Get person](https://github.com/37signals/bcx-api/blob/master/sections/people.md#get-person)
+* [Basecamp Classic: Current person](https://github.com/37signals/basecamp-classic-api/blob/master/sections/people.md#current-person)
+* [Highrise: Get myself](https://github.com/37signals/highrise-api/blob/master/sections/users.md#get-myself)
+* [Campfire: Get self](https://github.com/37signals/campfire-api/blob/master/sections/users.md#get-self)
+* [Backpack: Current user](https://github.com/37signals/backpack-api/blob/master/sections/users.md#current-user)
