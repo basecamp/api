@@ -44,7 +44,7 @@ ever having to see his password or ask him to copy/paste an API key.
 1. [Grab an OAuth 2 library](http://oauth.net/code/).
 2. Register your app at [integrate.37signals.com](https://integrate.37signals.com). You'll be assigned a `client_id` and `client_secret`. You'll need to provide a `redirect_uri`: a URL where we can send a verification code. Just enter a dummy URL like `http://myapp.com/oauth` if you're not ready for this yet.
 3. Configure your OAuth 2 library with your `client_id`, `client_secret`, and `redirect_uri`. Tell it to use `https://launchpad.37signals.com/authorization/new` to request authorization and `https://launchpad.37signals.com/authorization/token` to get access tokens.
-4. Try making an authorized request to `https://launchpad.37signals.com/authorization.json` to dig in and test it out!
+4. Try making an authorized request to `https://launchpad.37signals.com/authorization.json` to dig in and test it out! Check out the [Get authorization](#get-authorization) endpoint for a description of what this returns.
 
 
 OAuth 2 from scratch
@@ -81,3 +81,49 @@ Implementation notes:
 * We support the web_server and user_agent flows, not the client_credentials or device flows.
 * We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
 * We return more verbose errors than what's given in the spec to help with client development. We'll move these to a separate parameter later.
+
+
+Get authorization
+-----------------
+
+* `GET https://launchpad.37signals.com/authorization.json`
+* `GET https://launchpad.37signals.com/authorization.xml`
+
+This endpoint returns the following:
+
+* A `expires_at` timestamp for when this token will expire, and you'll need to fetch a new one to authenticate requests
+* An `identity`, which is **NOT** used for determining who this user is within a specific application. The `id` field should **NOT** be used for submitting data within any application's API. This field can be used to get a user's name and email address quickly, and the `id` field could be used for caching on a cross-application basis if needed.
+* A list of `accounts` that this user has access to.
+
+This endpoint should be first request made after you've obtained a user's authorization token via OAuth. You can pick which account to use for a given product, and then base where to make requests to from the chosen account's `href` field.
+
+```json
+{
+  "expires_at": "2012-03-22T16:56:48-05:00",
+  "identity": {
+    "id": 9999999,
+    "name": "Jason Fried",
+    "email_address": "jason@37signals.com",
+  },
+  "accounts": [
+    {
+      "product": "bcx",
+      "id": 88888888,
+      "name": "Wayne Enterprises, Ltd.",
+      "href": "https://basecamp.com/88888888/api/v1",
+    },
+    {
+      "product": "bcx",
+      "id": 77777777,
+      "name": "Veidt, Inc",
+      "href": "https://basecamp.com/77777777/api/v1",
+    },
+    {
+      "product": "campfire",
+      "id": 44444444,
+      "name": "Acme Shipping Co.",
+      "href": "https://acme4444444.campfirenow.com"
+    }
+  ]
+}
+```
