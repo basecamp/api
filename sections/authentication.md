@@ -70,7 +70,7 @@ The typical flow for a web app:
 
 5. Your app uses the token to authorize API requests to any of the 37signals ID's accounts. Set the Authorization request header:
 
-        Authorization: Bearer <tokenhere>
+        Authorization: Bearer YOUR_OAUTH_TOKEN
 
 6. To get info about the 37signals ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`). (See 
 
