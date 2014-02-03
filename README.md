@@ -48,7 +48,6 @@ Official logos
 
 This repo contains official high quality EPS logos for each product, which we encourage use of to promote your app!
 
-* [37signals official logo](https://github.com/37signals/api/tree/master/logos/37signals.eps?raw=true)
 * [Basecamp official logo](https://github.com/37signals/api/tree/master/logos/basecamp.eps?raw=true)
 * [Highrise official logo](https://github.com/37signals/api/tree/master/logos/highrise.eps?raw=true)
 * [Campfire official logo](https://github.com/37signals/api/tree/master/logos/campfire.eps?raw=true)
