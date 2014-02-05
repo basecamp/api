@@ -1,9 +1,9 @@
-37signals API Authentication
-============================
+Basecamp API Authentication
+===========================
 
 > Speak, friend, and enter.
 
-All 37signals' products API requests can be authenticated by passing along an OAuth 2 token. API keys are supported as well for some apps.
+All Basecamp' products API requests can be authenticated by passing along an OAuth 2 token. API keys are supported as well for some apps.
 
 Basic Auth (new Basecamp only)
 ------------------------------
@@ -60,7 +60,7 @@ The typical flow for a web app:
 
         https://launchpad.37signals.com/authorization/new?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri
 
-2. We authenticate their 37signals ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
+2. We authenticate their Basecamp ID and ask whether it's ok to give access to your app. [Here's an example of what this screen looks like](https://launchpad.37signals.com/authorization/new?type=web_server&client_id=0bf18204f5a28003bf7b9abb7e1db5e649d86ef4&redirect_uri=moist%3A%2F%2Foauth)
 
 3. We redirect the user back to your app with a time-limited verification code.
 
@@ -68,11 +68,11 @@ The typical flow for a web app:
 
         POST https://launchpad.37signals.com/authorization/token?type=web_server&client_id=your-client-id&redirect_uri=your-redirect-uri&client_secret=your-client-secret&code=verification-code
 
-5. Your app uses the token to authorize API requests to any of the 37signals ID's accounts. Set the Authorization request header:
+5. Your app uses the token to authorize API requests to any of the Basecamp ID's accounts. Set the Authorization request header:
 
         Authorization: Bearer YOUR_OAUTH_TOKEN
 
-6. To get info about the 37signals ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`). (See 
+6. To get info about the Basecamp ID you authorized and the accounts you have access to, make an authorized request to `https://launchpad.37signals.com/authorization.json` (or `/authorization.xml`). (See 
 
 Implementation notes:
 
@@ -103,7 +103,7 @@ This endpoint should be first request made after you've obtained a user's author
   "identity": {
     "id": 9999999,
     "name": "Jason Fried",
-    "email_address": "jason@37signals.com",
+    "email_address": "jason@basecamp.com",
   },
   "accounts": [
     {
@@ -132,12 +132,12 @@ This endpoint should be first request made after you've obtained a user's author
 Who am I?
 ---------
 
-So you've picked the product, have the `href` to request to, and now what? Depending on what your API integration needs, you may need to know who the current user is within that product. For example, if you were working with the [Basecamp API](https://github.com/37signals/bcx-api) this is how you would obtain the `id` field to [submit a todo](https://github.com/37signals/bcx-api/blob/master/sections/todos.md#create-todo) assigned to the current user.
+So you've picked the product, have the `href` to request to, and now what? Depending on what your API integration needs, you may need to know who the current user is within that product. For example, if you were working with the [Basecamp API](https://github.com/Basecamp/bcx-api) this is how you would obtain the `id` field to [submit a todo](https://github.com/Basecamp/bcx-api/blob/master/sections/todos.md#create-todo) assigned to the current user.
 
 Here's links to the endpoints in our products that you'll need to hit:
 
-* [Basecamp: Get person](https://github.com/37signals/bcx-api/blob/master/sections/people.md#get-person)
-* [Basecamp Classic: Current person](https://github.com/37signals/basecamp-classic-api/blob/master/sections/people.md#current-person)
-* [Highrise: Get myself](https://github.com/37signals/highrise-api/blob/master/sections/users.md#get-myself)
-* [Campfire: Get self](https://github.com/37signals/campfire-api/blob/master/sections/users.md#get-self)
-* [Backpack: Current user](https://github.com/37signals/backpack-api/blob/master/sections/users.md#current-user)
+* [Basecamp: Get person](https://github.com/basecamp/bcx-api/blob/master/sections/people.md#get-person)
+* [Basecamp Classic: Current person](https://github.com/basecamp/basecamp-classic-api/blob/master/sections/people.md#current-person)
+* [Highrise: Get myself](https://github.com/basecamp/highrise-api/blob/master/sections/users.md#get-myself)
+* [Campfire: Get self](https://github.com/basecamp/campfire-api/blob/master/sections/users.md#get-self)
+* [Backpack: Current user](https://github.com/basecamp/backpack-api/blob/master/sections/users.md#current-user)
