@@ -13,8 +13,7 @@ Want to get started with API integration? Here's a quick check list:
 2. Review the [brand guidelines](#brand-guidelines) for rules on naming and marketing your app
 3. Read up on how to [authenticate your app](#authentication) with our products.
 4. Peruse the [API docs](#products) for the product you need to work with
-5. Join the [API mailing list](http://groups.google.com/group/37signals-api) to talk to others using the APIs and give us feedback!
-
+5. Have a question? Post it on StackOverflow tagged with the product you're working on (for example, `basecamp`) or [open up a support ticket](http://help.basecamp.com/tickets/new).
 
 API Documentation
 -----------------
@@ -47,5 +46,3 @@ Help us make it better
 ----------------------
 
 Please tell us how we can make the APIs better. If you have a specific feature request or if you found a bug, please [open a support ticket](http://help.basecamp.com/tickets/new). Also, feel free to fork these docs and send a pull request with improvements!
-
-To talk with us and other developers about the API, subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
