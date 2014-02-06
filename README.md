@@ -13,7 +13,7 @@ Want to get started with API integration? Here's a quick check list:
 2. Review the [brand guidelines](#brand-guidelines) for rules on naming and marketing your app
 3. Read up on how to [authenticate your app](#authentication) with our products.
 4. Peruse the [API docs](#products) for the product you need to work with
-5. Have a question? Post it on StackOverflow tagged with the product you're working on (for example, `basecamp`) or [open up a support ticket](http://help.basecamp.com/tickets/new).
+5. Have a question? Post it on [StackOverflow](http://stackoverflow.com/questions/ask) tagged with the product you're working on (for example, `basecamp`) or [open up a support ticket](http://help.basecamp.com/tickets/new).
 
 API Documentation
 -----------------
