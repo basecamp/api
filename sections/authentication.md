@@ -5,10 +5,10 @@ Basecamp API Authentication
 
 All Basecamp' products API requests can be authenticated by passing along an OAuth 2 token. API keys are supported as well for some apps.
 
-Basic Auth (new Basecamp only)
+Basic Auth (Basecamp 2 only)
 ------------------------------
 
-To hit the ground running with the all new Basecamp's API, just use HTTP Basic authentication with your own login info:
+To hit the ground running with the Basecamp 2's API, just use HTTP Basic authentication with your own login info:
 
 ```shell
 curl -u username:password -H 'User-Agent: MyApp (yourname@example.com)' https://basecamp.com/999999999/api/v1/projects.json
