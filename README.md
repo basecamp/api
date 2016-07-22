@@ -22,6 +22,7 @@ Need to look up the API documentation for a product? There's a repo for each:
 
 * [Basecamp API](https://github.com/basecamp/bcx-api)
 * [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api)
+* [Basecamp 3 API](https://github.com/basecamp/bc3-api)
 
 Authentication
 --------------
