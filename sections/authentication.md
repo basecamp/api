@@ -136,7 +136,8 @@ So you've picked the product, have the `href` to request to, and now what? Depen
 
 Here are links to the endpoints in our products that you'll need to hit:
 
-* [Basecamp: Get person](https://github.com/basecamp/bcx-api/blob/master/sections/people.md#get-person)
+* [Basecamp 3: Get person] (https://github.com/basecamp/bc3-api/blob/master/sections/people.md#get-person)
+* [Basecamp 2: Get person](https://github.com/basecamp/bcx-api/blob/master/sections/people.md#get-person)
 * [Basecamp Classic: Current person](https://github.com/basecamp/basecamp-classic-api/blob/master/sections/people.md#current-person)
 * [Highrise: Get myself](https://github.com/basecamp/highrise-api/blob/master/sections/users.md#get-myself)
 * [Campfire: Get self](https://github.com/basecamp/campfire-api/blob/master/sections/users.md#get-self)
