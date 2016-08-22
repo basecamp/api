@@ -134,7 +134,7 @@ Who am I?
 
 So you've picked the product, have the `href` to request to, and now what? Depending on what your API integration needs, you may need to know who the current user is within that product. For example, if you were working with the [Basecamp API](https://github.com/Basecamp/bcx-api) this is how you would obtain the `id` field to [submit a todo](https://github.com/Basecamp/bcx-api/blob/master/sections/todos.md#create-todo) assigned to the current user.
 
-Here's links to the endpoints in our products that you'll need to hit:
+Here are links to the endpoints in our products that you'll need to hit:
 
 * [Basecamp: Get person](https://github.com/basecamp/bcx-api/blob/master/sections/people.md#get-person)
 * [Basecamp Classic: Current person](https://github.com/basecamp/basecamp-classic-api/blob/master/sections/people.md#current-person)
