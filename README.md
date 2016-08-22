@@ -41,9 +41,9 @@ Have questions on how to name and publicize your app? Our [brand guidelines](htt
 Official logo
 -------------
 
-Need our logo for your marketing page? You can download the [Basecamp official logo](https://github.com/basecamp/api/tree/master/logos/basecamp.eps?raw=true) in the repo.
+Need our logo for your marketing page? You can download the [Basecamp official logo](https://github.com/basecamp/api/tree/master/logos) in the repo.
 
 Help us make it better
 ----------------------
 
-Please tell us how we can make the APIs better. If you have a specific feature request or if you found a bug, please [open a support ticket](http://help.basecamp.com/tickets/new). Also, feel free to fork these docs and send a pull request with improvements!
+Please tell us how we can make the APIs better. If you have a specific feature request or if you found a bug, please [open a support ticket](https://basecamp.com/support). Also, feel free to fork these docs and send a pull request with improvements!
