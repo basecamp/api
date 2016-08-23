@@ -107,22 +107,25 @@ This endpoint should be first request made after you've obtained a user's author
   },
   "accounts": [
     {
+      "product": "bc3",
+      "id": 99999999,
+      "name": "Honcho Design",
+      "href": "https://3.basecampapi.com/99999999",
+      "app_href": "https://3.basecamp.com/99999999"
+    },
+    {
       "product": "bcx",
       "id": 88888888,
       "name": "Wayne Enterprises, Ltd.",
       "href": "https://basecamp.com/88888888/api/v1",
-    },
-    {
-      "product": "bcx",
-      "id": 77777777,
-      "name": "Veidt, Inc",
-      "href": "https://basecamp.com/77777777/api/v1",
+      "app_href": "https://basecamp.com/88888888"
     },
     {
       "product": "campfire",
       "id": 44444444,
       "name": "Acme Shipping Co.",
-      "href": "https://acme4444444.campfirenow.com"
+      "href": "https://acme4444444.campfirenow.com",
+      "app_href": "https://acme4444444.campfirenow.com"
     }
   ]
 }
