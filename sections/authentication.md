@@ -102,7 +102,8 @@ This endpoint should be first request made after you've obtained a user's author
   "expires_at": "2012-03-22T16:56:48-05:00",
   "identity": {
     "id": 9999999,
-    "name": "Jason Fried",
+    "first_name": "Jason",
+    "last_name": "Fried",
     "email_address": "jason@basecamp.com",
   },
   "accounts": [
