@@ -79,8 +79,10 @@ Implementation notes:
 * Start by reading the [draft spec](http://tools.ietf.org/html/draft-ietf-oauth-v2)
 * We implement draft 5 and will update our implementation as the final spec converges. Be prepared for changes along the way.
 * We support the web_server and user_agent flows, not the client_credentials or device flows.
-* We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
 * We return more verbose errors than what's given in the spec to help with client development. We'll move these to a separate parameter later.
+* We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
+
+      POST https://launchpad.37signals.com/authorization/token?type=refresh&refresh_token=your-current-refresh-token&client_id=your-client-id&redirect_uri=your-redirect-uri&client_secret=your-client-secret
 
 
 Get authorization
