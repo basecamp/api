@@ -38,8 +38,8 @@ OAuth 2
 
 For a full app integration, you wouldn't want to get into the business of asking
 customers for their passwords -- or storing them! -- so we offer a simple way to
-ask a user for access to his account. You get an API access token back without
-ever having to see his password or ask him to copy/paste an API key.
+ask a user for access to their account. You get an API access token back without
+ever having to see their password or ask him to copy/paste an API key.
 
 1. [Grab an OAuth 2 library](http://oauth.net/code/).
 2. Register your app at [integrate.37signals.com](https://integrate.37signals.com). You'll be assigned a `client_id` and `client_secret`. You'll need to provide a `redirect_uri`: a URL where we can send a verification code. Just enter a dummy URL like `http://myapp.com/oauth` if you're not ready for this yet.
