@@ -1,7 +1,7 @@
 Basecamp APIs
 =============
 
-Looking to integrate with a Basecamp product? We've got everything you need here. From sample code to detailed API documentation, you'll be up and running in no time.
+Looking to integrate with a Basecamp product? We've got everything you need here. From sample code to detailed API documentation, you'll be up and running in no time. (We just encourage you to have [realistic expectations](#realistic-expectations) regarding the continued evolution of these APIs).
 
 
 Where do I start?
