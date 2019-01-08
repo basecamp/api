@@ -43,7 +43,10 @@ Official logo
 
 Need our logo for your marketing page? You can download the [Basecamp official logo](https://github.com/basecamp/api/tree/master/logos) in the repo.
 
-Help us make it better
+
+Realistic expectations
 ----------------------
 
-Please tell us how we can make the APIs better. If you have a specific feature request or if you found a bug, please [open a support ticket](https://basecamp.com/support). Also, feel free to fork these docs and send a pull request with improvements!
+The Basecamp APIs aren't intended to be complete models of everything you can do in all our applications. The truth is that less than half a percent of our end-users take advantage of applications that integrate with Basecamp or write their own integrations. Such low usage means that continuing to update the API to stay in sync with all new features is not a high priority at Basecamp. When we do work for that less than that one half of a percent of users, we're not helping that other 99.5%.
+
+We still do make upgrades and improvements from time to time, and if you find a bug in the APIs we do have exposed, please [open a support ticket](https://basecamp.com/support). Also, feel free to fork these docs and send a pull request with improvements!
