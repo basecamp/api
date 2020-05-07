@@ -9,8 +9,8 @@ Where do I start?
 
 Want to get started with API integration? Here's a quick check list:
 
-1. [Register your app](https://launchpad.37signals.com/integrations/new) or [update your already registered app](http://launchpad.37signals.com/integrations) to access more products.
-2. Review our [Terms of Service](https://basecamp.com/about/policies/terms), in particular the **Services Adaptations and API Terms** section and our [Use Restrictions](https://basecamp.com/about/policies/abuse).
+1. Review our [Terms of Service](https://basecamp.com/about/policies/terms), in particular the **Services Adaptations and API Terms** section and our [Use Restrictions](https://basecamp.com/about/policies/abuse). 
+2. [Register your app](https://launchpad.37signals.com/integrations/new) or [update your already registered app](http://launchpad.37signals.com/integrations) to access more products.
 3. Review the [brand guidelines](#brand-guidelines) for rules on naming and marketing your app.
 4. Read up on how to [authenticate your app](#authentication) with our products.
 5. Peruse the [API docs](#products) for the product you need to work with.
