@@ -42,7 +42,7 @@ Have questions on how to name and publicize your app? Our [brand guidelines](htt
 Official logo
 -------------
 
-Need our logo for your marketing page? You can download the [Basecamp official logo](https://github.com/basecamp/api/tree/master/logos) in the repo.
+Need our logo for your marketing page? [Reach out to us](https://basecamp.com/support) and tell us about your app, we'll give you the go-ahead, and you can download our logos from our [Press kit](https://basecamp.com/about/press) 
 
 
 Realistic expectations
