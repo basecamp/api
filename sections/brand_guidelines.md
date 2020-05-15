@@ -42,7 +42,7 @@ Marketing your app
 **Do**
 
 * Say that your app integrates or works with Basecamp, Highrise, Backpack, or Campfire.
-* Download official [logos](https://github.com/basecamp/api/tree/master/logos) for use on your site.
+* Download official [logos](https://basecamp.com/about/press) for use on your site. You **must** [contact us](mailto:support@basecamp.com) before you use our logos.
 * Link to our product websites for your customers to learn more.
 
 **Don't**
