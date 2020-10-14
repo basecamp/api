@@ -136,7 +136,7 @@ This endpoint should be first request made after you've obtained a user's author
 
 ### On authenticating users via OAuth
 
-**We don't recommend using the OAuth API to authenticate users in third party services**. For example, to implement a button *"Login with Basecamp"* similar to others like *"Login with Google"* or *"Login with Github"*. The reason is that we don't verify email addresses. As a result, an attacker could gain access to these services using email addresses they don't own.
+**We don't recommend using the OAuth API to authenticate users in third party services**. For example, to implement a button *"Login with Basecamp"* similar to others like *"Login with Google"* or *"Login with GitHub"*. The reason is that we don't verify email addresses. As a result, an attacker could gain access to these services using email addresses they don't own.
 
 Who am I?
 ---------
