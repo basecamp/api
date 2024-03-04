@@ -82,7 +82,7 @@ Implementation notes:
 * We return more verbose errors than what's given in the spec to help with client development.
 * We issue refresh tokens. Use them to request a new access token when it expires (2 week lifetime, currently).
 
-      POST https://launchpad.37signals.com/authorization/token?type=refresh&refresh_token=your-current-refresh-token&client_id=your-client-id&redirect_uri=your-redirect-uri&client_secret=your-client-secret
+      POST https://launchpad.37signals.com/authorization/token?type=refresh&refresh_token=your-current-refresh-token&client_id=your-client-id&client_secret=your-client-secret
 
 
 Get authorization
