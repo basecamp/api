@@ -9,7 +9,7 @@ Where do I start?
 
 Want to get started with API integration? Here's a quick check list:
 
-1. Review our [Terms of Service](https://basecamp.com/about/policies/terms), in particular the **Services Adaptations and API Terms** section and our [Use Restrictions](https://basecamp.com/about/policies/abuse). 
+1. Review our [Terms of Service](https://basecamp.com/about/policies/terms), in particular the **Services Adaptations and API Terms** section and our [Use Restrictions](https://basecamp.com/about/policies/abuse).
 2. [Register your app](https://launchpad.37signals.com/integrations/new) or [update your already registered app](http://launchpad.37signals.com/integrations) to access more products.
 3. Review the [brand guidelines](#brand-guidelines) for rules on naming and marketing your app.
 4. Read up on how to [authenticate your app](#authentication) with our products.
@@ -20,7 +20,9 @@ API Documentation
 -----------------
 
 Need to look up the API documentation for a product? There's a repo for each:
-
+* [Backpack API](https://github.com/basecamp/backpack-api)
+* [Campfire API](https://github.com/basecamp/campfire-api)
+* [Highrise API](https://github.com/basecamp/highrise-api)
 * [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api)
 * [Basecamp 2 API](https://github.com/basecamp/bcx-api)
 * [Basecamp 3 API](https://github.com/basecamp/bc3-api)
@@ -42,7 +44,7 @@ Have questions on how to name and publicize your app? Our [brand guidelines](htt
 Official logo
 -------------
 
-Need our logo for your marketing page? [Reach out to us](https://basecamp.com/support) and tell us about your app, we'll give you the go-ahead, and you can download our logos from our [Press kit](https://basecamp.com/about/press) 
+Need our logo for your marketing page? [Reach out to us](https://basecamp.com/support) and tell us about your app, we'll give you the go-ahead, and you can download our logos from our [Press kit](https://basecamp.com/about/press)
 
 
 Realistic expectations
